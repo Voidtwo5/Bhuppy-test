@@ -1,0 +1,116 @@
+body {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+.fzyHeader {
+ width: 100%;
+ height: auto;
+ margin: 0px;
+ padding: 0px 20px;
+ background-color: #000;
+ float: left;   
+ color: #fff;
+}
+
+.CompanyLogo {
+    max-width: 75px;
+    float: left;
+    padding: 3px 0px;
+}
+.CompanyLogo img {
+    max-width: 50px ;
+}
+.FzyNavbar {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+}
+.FzyNavlist {
+    margin: 0px;
+    float: right;
+}
+.FzyNavlist li {
+    list-style: none;
+    float: left;
+}
+.FzyNavlist li a {
+    color: #ffff;
+    padding: 10px 12px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-size: 10px;
+
+}
+.FzyNavlist li a i {
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+.show-menu-btn, 
+.hide-menu-btn {
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.show-menu-btn {
+    margin: 0px;
+ float: right;
+}
+.show-menu-btn i {
+    line-height: 100px;
+}
+.FzyNavlist a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover {
+    color: #00ff0a;
+}
+#FzyToggle-btn {
+    position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+/*Responsive Design */ 
+@media screen and (max-width: 767px) {
+    .show-menu-btn,
+    .hide-menu-btn {
+        display: block;
+    }
+
+.FzyNavlist {
+    position: fixed;
+    width: auto;
+    height: 100vh;
+    background-color: #000;
+    top: -100%;
+    left: 0;
+    padding: 50px 0px;
+    transition: 1s;
+}
+.FzyNavlist li {
+    width: auto;
+}
+.FzyNavlist li a {
+    padding: 15px 15px;
+    text-align: left;
+    font-size: 10px;
+
+}
+.FzyNavlist li a i {
+    width: auto;
+    font-size: 20px;
+}
+.hide-menu-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+}
